@@ -25,7 +25,8 @@
 
     input {
 
-        margin-top: 6vh;
+        margin-top: 1vh;
+        margin-bottom: 3vh;
         width: 30%;
         height: 4vh;
         text-align: center;
@@ -75,12 +76,13 @@
 
     input {
 
-        margin-top: 6vh;
+        margin-top: 1vh;
+        margin-bottom: 5vh;
         width: 50%;
         height: 4vh;
         text-align: center;
         border: 1px solid #000;
-        font-size: 1.5vw;
+        font-size: 4vw;
     }
 
     #btn-home {
@@ -126,7 +128,8 @@
 
     input {
 
-        margin-top: 6vh;
+        margin-top: 1vh;
+        margin-bottom: 4vh;
         width: 60%;
         height: 4vh;
         text-align: center;

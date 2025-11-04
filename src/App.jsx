@@ -1,11 +1,16 @@
 import { useState } from 'react';
-import './App.css';
-import Home from './pages/Home';
 import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
-import Navbar from './components/Navbar';
+import './App.css';
+
+import Home from './pages/Home';
 import Count from './pages/Count';
-import Close from './assets/images/Close.png';
 import NotFound from './pages/NotFound';
+import Multiplication from './pages/Multiplication';
+
+
+import Navbar from './components/Navbar';
+import Close from './assets/images/Close.png';
+
 
 function App() {
 
@@ -27,6 +32,7 @@ function App() {
 
             <img id="close" src={Close} alt="" onClick={handleCloseMenu}/>
 
+            <Link className="link-menu" to="/">Home</Link>
             <Link className="link-menu" to="/number/1">1</Link>
             <Link className="link-menu" to="/number/2">2</Link>
             <Link className="link-menu" to="/number/3">3</Link>
@@ -46,6 +52,7 @@ function App() {
 
             <Route path="/" element={<Home/>}/>
             <Route path="number/:number" element={<Count/>}/>
+            <Route path="number/:number/multiplier/:multiplier" element={<Multiplication/>}/>
             <Route path="*" element={<NotFound/>}/>
 
           </Routes>
